@@ -15,7 +15,7 @@ const cli = meow({
   }
 }, `
 	Usage
-	  $ sort-keys <source …>[ <destination>]
+	  $ sort-keys <source>[ <destination>]
 	Options
 	  -d, --deep    Deep sort all objects
 	<source>        Source JSON file

@@ -7,7 +7,7 @@ CLI tool for sindresorhus/sort-keys
 
 ## Usage
 ```bash
-$ sort-keys <source …>[ <destination>]
+$ sort-keys <source>[ <destination>]
 ```
 
 ## Options
