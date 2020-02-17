@@ -46,7 +46,7 @@ const cli = meow({
       deep: !!cli.flags.deep,
     });
 
-    writeFileSync(destination, JSON.stringify(sorted))
+    writeFileSync(destination, JSON.stringify(sorted, null, 2))
   } catch (error) {
     if (error.name === 'SortKeysError') {
       console.error(error.message);
