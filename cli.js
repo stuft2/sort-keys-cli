@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const { readFileSync, writeFileSync } = require('fs')
-const { join } = require('path')
+const { resolve } = require('path')
 const meow = require('meow');
 const sort = require('sort-keys');
 
@@ -28,11 +28,15 @@ const cli = meow({
 (async () => {
   try {
     let [ source, destination ] = cli.input
+
     if (!source.endsWith('.json')) source = `${source}.json`
-    source = join(__dirname, source)
+    source = resolve(process.cwd(), source)
+
     if (!destination) destination = source
-    else if (!destination.endsWith('.json')) destination = `${destination}.json`
-    destination = join(__dirname, destination)
+    else {
+      if (!destination.endsWith('.json')) destination = `${destination}.json`
+      destination = resolve(process.cwd(), destination)
+    }
 
     console.info('Source     :', source)
     console.info('Destination:', destination)
