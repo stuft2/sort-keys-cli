@@ -1,0 +1,38 @@
+{
+  "name": "sort-keys-cli",
+  "version": "0.0.0",
+  "description": "Sort JSON file keys",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuft2/sort-keys-cli.git"
+  },
+  "author": {
+    "name": "Spencer Tuft",
+    "email": "spencer.tuft@gmail.com"
+  },
+  "bin": {
+    "sort-keys": "cli.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "sort-keys",
+    "cli"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/stuft2/sort-keys-cli/issues"
+  },
+  "homepage": "https://github.com/stuft2/sort-keys-cli#readme",
+  "dependencies": {
+    "meow": "^6.0.1",
+    "sort-keys": "^4.0.0"
+  }
+}
