@@ -19,6 +19,6 @@ $ sort-keys <source>[ <destination>]
 
 ## Examples
 ```bash
-Sort all keys in a JSON file all .png files in src folder into dist except src/goat.png
+Sort all keys in a JSON file
 $ sort-keys example.json --deep
 ```
