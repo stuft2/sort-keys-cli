@@ -1,6 +1,6 @@
 {
   "name": "sort-keys-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sort JSON file keys",
   "repository": {
     "type": "git",
