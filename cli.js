@@ -38,9 +38,6 @@ const cli = meow({
       destination = resolve(process.cwd(), destination)
     }
 
-    console.info('Source     :', source)
-    console.info('Destination:', destination)
-
     const obj = JSON.parse(readFileSync(source, 'utf8'));
     const sorted = sort(obj, {
       deep: !!cli.flags.deep,
