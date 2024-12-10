@@ -13,8 +13,9 @@ $ sort-keys <source>[ <destination>]
 ## Options
 ```bash
 -d, --deep      Deep sort all objects
-<source>        Source JSON file
-<destination>   (Optional) Destination file location. Will overwrite source if not provided.
+-s, --std      Use STDIN and STDOUT instead of files
+<source>        Source JSON file (if not using STDIN)
+<destination>   (Optional) Destination file location (if not using STDOUT). Will overwrite source if not provided.
 ```
 
 ## Examples
