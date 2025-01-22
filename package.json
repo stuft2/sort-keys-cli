@@ -14,10 +14,12 @@
     "sort-keys": "cli.js"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=18"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx @biomejs/biome check *.js",
+    "lint:fix": "npx @biomejs/biome check --write *.js",
+    "test": "node --test cli.test.js"
   },
   "files": [
     "cli.js"
@@ -34,5 +36,9 @@
   "dependencies": {
     "meow": "^6.0.1",
     "sort-keys": "^4.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.10.7"
   }
 }
